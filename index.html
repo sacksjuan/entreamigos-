@@ -5,33 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Control de Mesas - Restaurante</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Control de Mesas - Restaurante</h1>
+        <h1><i class="fas fa-utensils"></i> Control de Mesas - Restaurante</h1>
         <nav>
-            <button id="verPedidosBtn">Ver Pedidos del Día</button>
+            <button id="verPedidosBtn" class="btn-primary"><i class="fas fa-list"></i> Ver Pedidos del Día</button>
         </nav>
     </header>
 
     <main>
         <section id="resumenDia">
             <div class="tarjeta">
+                <i class="fas fa-clipboard-list"></i>
                 <h3>Pedidos del Día</h3>
                 <p id="totalPedidos">0</p>
             </div>
             <div class="tarjeta">
+                <i class="fas fa-money-bill-wave"></i>
                 <h3>Total Efectivo</h3>
                 <p id="totalEfectivo">$0</p>
             </div>
             <div class="tarjeta">
+                <i class="fas fa-credit-card"></i>
                 <h3>Total Tarjeta</h3>
                 <p id="totalTarjeta">$0</p>
             </div>
         </section>
 
         <section id="mesas">
-            <h2>Mesas</h2>
+            <h2><i class="fas fa-chair"></i> Mesas</h2>
             <div id="gridMesas"></div>
         </section>
     </main>
@@ -67,3 +71,4 @@
     <script src="scips.js"></script>
 </body>
 </html>
+
