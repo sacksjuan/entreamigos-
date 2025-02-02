@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Mesas - Restaurante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Control de Mesas - Restaurante</h1>
+        <nav>
+            <button id="verPedidosBtn">Ver Pedidos del Día</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="resumenDia">
+            <div class="tarjeta">
+                <h3>Pedidos del Día</h3>
+                <p id="totalPedidos">0</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Total Efectivo</h3>
+                <p id="totalEfectivo">$0</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Total Tarjeta</h3>
+                <p id="totalTarjeta">$0</p>
+            </div>
+        </section>
+
+        <section id="mesas">
+            <h2>Mesas</h2>
+            <div id="gridMesas"></div>
+        </section>
+    </main>
+
+    <div id="modalPedidos" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar">&times;</span>
+            <h2>Pedidos del Día</h2>
+            <table id="tablaPedidos">
+                <thead>
+                    <tr>
+                        <th>Hora Inicio</th>
+                        <th>Hora Fin</th>
+                        <th>Mozo</th>
+                        <th>Subtotal</th>
+                        <th>Forma de Pago</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="modalComandas" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar">&times;</span>
+            <h2>Comandas del Pedido</h2>
+            <ul id="listaComandas"></ul>
+        </div>
+    </div>
+
+    <script src="scips.js"></script>
+</body>
+</html>
